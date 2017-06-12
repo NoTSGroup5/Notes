@@ -13,7 +13,13 @@ Temporary fix:
 1. Find 'FabricCAClientImpl.js' (In node_modules, is a dependency of fabric-ca-client)
 2. Replace line 289 with: ```this._httpClient = http;```
 
+
 Note: This has to be done in several projects. Composer-cli (which is globally installed), proof of concept and epd.
+You can find your global npm package folder running the following command:
+```
+npm root -g
+```
+
 
 ----------------------------
 
